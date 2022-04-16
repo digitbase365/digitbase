@@ -287,7 +287,7 @@ section.hero{
 /* FOOTER Ruleset */
 footer{
   width: 100vw; 
-  background: linear-gradient(to right, #00093c, #2d0b00);
+  background: linear-gradient(to bottom, #8030AA, #00093c);
   color: #fff;
   padding: 30px 0 10px;
   border-top-left-radius: 85px;
@@ -499,9 +499,6 @@ footer .underline span:nth-child(1){
   }
   .menu.swish .burger{
     transform: translateX(-32px);
-    background: transparent;
-  }
-  .menu.swish .burger::before{
     transform: rotate(45deg) translate(23px, -23px);
   }
   .menu.swish .burger::after{
@@ -518,7 +515,7 @@ footer .underline span:nth-child(1){
   }
   #box1{
     width: 530px;
-    height: 100%;
+    height: 100;
     background-image: url(./images/gridhand.png); 
     position: absolute;
     bottom: -100%;
