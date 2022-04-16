@@ -16,7 +16,7 @@
   font-family: 'Baloo-2';
 }
 a{
-  outline: 0;
+  outline: none;
   text-decoration: none;
 }
 p{
@@ -182,7 +182,7 @@ section.hero{
   z-index: 3;
 }
 
-/* Service Ruleset */
+/* SERVICES Ruleset */
 #solution{
   background: url(./images/backdrop/01.png);
   min-height: 100vh; 
@@ -284,7 +284,7 @@ section.hero{
 
 /* End of Solution Ruleset */
 
-/* Footer Ruleset */
+/* FOOTER Ruleset */
 footer{
   width: 100vw; 
   background: linear-gradient(to right, #00093c, #2d0b00);
@@ -460,15 +460,14 @@ footer .underline span:nth-child(1){
 
 /****************** End of ANIMATION Series ****************/
 
-
-
-
-
-
-
+/* MOBILE */
+/* RESPONSIVE */
+/* FLUIDITY */
 
 /* RESPONSIVE FLUIDITY */
 @media screen and (max-width: 500px){
+  /* HEADER MOBILE RULESET *************************************************/
+
   header{ 
     padding: 5px 16px;
     padding-left: 9px; 
@@ -508,9 +507,18 @@ footer .underline span:nth-child(1){
   .menu.swish .burger::after{
     transform: rotate(-45deg) translate(23px, 23px);
   }
+
+  /* HERO MOBILE RULESET *************************************************/
+  section.hero{
+    position: relative;
+    min-height: 450px;
+    overflow: hidden;
+    background-color: #1e242a;
+    z-index: -1;
+  }
   #box1{
     width: 530px;
-    height: 625px;
+    height: 100%;
     background-image: url(./images/gridhand.png); 
     position: absolute;
     bottom: -100%;
