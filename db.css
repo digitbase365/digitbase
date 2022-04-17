@@ -466,16 +466,20 @@ footer .underline span:nth-child(1){
 
 /* RESPONSIVE FLUIDITY */
 @media screen and (max-width: 500px){
-  /* Generic */
+  /* Generic */ 
+  .section-title{ 
+    font-size: 1.5rem; 
+  }
   p{
-    font-size: 0.95rem;
+    font-size: 0.97rem;
   }
 
   /* HEADER MOBILE RULESET *************************************************/
 
-  header{ 
-    padding: 5px 16px;
-    padding-left: 9px; 
+  header{  
+    padding: 1px;
+    padding-left: 6px; 
+    padding-right: 7px; 
   } 
   header .container nav{
     display: none;
@@ -485,30 +489,51 @@ footer .underline span:nth-child(1){
     padding-top: 5px;
   }
   .container .menu.hide-desktop{
-    display: block;
+    display: flex;
   }
   
-  header .container .menu{ 
+  .menu{
     width: 45px;
-    height: 40px;
-    border: 1px solid #fff;
+    height: 35px; 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    z-index: 99;
+    transition: all .5s ease-in-out;
   }
-  .container .menu .burger{
+  .menu .burger,
+  .menu .burger::before,
+  .menu .burger::after{
     width: 27px;
-    height: 2px;
+    height: 2.5px;
     background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    transition: all .5s ease-in-out; 
+  }
+  .menu .burger::before,
+  .menu .burger::after{ 
+    content: "";
+    position: absolute;
+  }
+  .menu .burger::before{
+    transform: translateY(-9px);
+  }
+  .menu .burger::after{
+    transform: translateY(9px);
+  }
 
+  .menu.menu.swish .burger{
+    transform: translateX(-50px);
+    background: transparent;
   }
-  .menu.swish .burger{
-    transform: translateX(-32px);
-    transform: rotate(45deg) translate(23px, -23px);
-  }
-  .menu.swish .burger::after{
-    transform: rotate(-45deg) translate(23px, 23px);
-  }
+  .menu.swish .burger::before{ 
+    transform: rotate(45deg) translate(35px, -35px);
+  } 
+  .menu.swish .burger::after{ 
+    transform: rotate(-45deg) translate(35px, 35px);
+  } 
 
   /* HERO MOBILE RULESET *************************************************/
   section.hero{
@@ -551,7 +576,7 @@ footer .underline span:nth-child(1){
   }
   #hero-text p{
     margin: 1.2em 0 2em;
-    font-size: 1.05rem;
+    font-size: .99rem;
     font-weight: 300;
   }
   #hero-text .cta{ 
