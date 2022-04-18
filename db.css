@@ -30,7 +30,10 @@ img{
   margin: 1em 0;
 }
 /* End of Generic Presets */
- 
+
+body{
+  background-color: rgb(248, 242, 246); 
+}
 main{
   width: 100%;
   min-height: 100vh; 
@@ -102,7 +105,7 @@ section.hero{
   width: 530px;
   height: 625px;
   background-color: #1e242a;
-  background-image: url(./images/gridhand.png);
+  background-image: url(./images/gridhand-min.png);
   position: absolute;
   bottom: -100%;
   left: 30%; 
@@ -114,7 +117,7 @@ section.hero{
   width: 530px;
   height: 625px;
   background-color: #1e242a;
-  background-image: url(./images/fullhand.png);
+  background-image: url(./images/fullhand-min.png);
   left: 0;
   z-index: -1;
 }
@@ -312,6 +315,10 @@ section .reachout{
   font-weight: 300;
   color: #444;
 }
+.reachout .mid span i{
+  color: #fcae49;
+  margin-right: 10px;
+}
 
 /* SUBSCRIPTION RULESET */
 .subscription{
@@ -321,10 +328,8 @@ section .reachout{
 }
 .form-container{
   max-width: 400px;
-  background: #fff;
-  box-shadow: 20px 20px 40px rgb(255, 211, 240);
-  box-shadow: 20px 20px 40px rgb(162, 222, 245);
-  box-shadow: 10px 20px 30px 2px rgb(206, 193, 243);
+  background: #fff; 
+  box-shadow: 5px 10px 20px 2px rgb(206, 193, 243);
   border-radius: 1em;
   padding: 2em;
   position: relative; 
