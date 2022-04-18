@@ -123,6 +123,25 @@
         </div>
       </div>
     </section>
+
+    <section class="subscription">
+      <div class="success">
+        <lottie-player class="lottie" src="https://assets8.lottiefiles.com/packages/lf20_NU3Nmy.json" background="transparent"  speed="1" style="width: 600px; height: 600px;"></lottie-player>
+      </div>
+      <div class="form-container">
+        <div class="onstart">
+          <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_5zh17nif.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+        </div>
+        <h1 class="seq">Wish to Subscribe?</h1>
+        <label for="email" class="seq">Email Address</label>
+        <input type="text" name="" id="email" class="seq">
+        <p class="seq">Don't worry we won't hound you like our competitors</p>
+        <a href="#0" class="cta seq">Join List </a>
+  
+      </div>
+      <h2>Success!</h2>
+    </section> 
+
   <footer>
     <div class="row">
       <div class="col">
@@ -172,5 +191,30 @@
 
   </main>
 <script src="./db.js"></script>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
+</script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+  let tl = new gsap.timeline({defaults: {ease: Circ.easeOut}})
+  let cta = document.querySelector('.form-container .cta')
+  const player = document.querySelector('.lottie')
+
+  tl.paused(true)
+
+  tl.to('.seq', {y: -40, opacity: 0, stagger: .05})
+  tl.to('.form-container', {opacity: 0}, "-=.4")
+  tl.to('.subscription h2', {opacity: 1, duration: 2, y: 20}, "+=1")    
+
+
+  // cta.style.color = "yellow"
+  cta.addEventListener('click', ()=>{
+    tl.play()
+    setTimeout(()=>{
+      player.play()
+    }, 800)
+  })
+</script>
 </body>
 </html>
