@@ -336,16 +336,15 @@ section .reachout{
   font-size: 3em;
   opacity: 0;
   position: absolute;
-  text-align: center;
-  width: 100%;
+  text-align: center; 
   margin-top: 8em;
   color: dodgerblue;
 }
 .subscription .success{
-  position: absolute;  
+  position: absolute;   
 }
 .lottie{
-  width: 100%; 
+  width: 100vw; 
   height: 100vh;
   background-size: cover;
   pointer-events: none;  
@@ -362,8 +361,7 @@ label{
   margin-bottom: 1em;
 }
 .form-container .cta.seq{
-  display: block;
-  background: rgb(182, 21, 128);
+  display: block; 
   background: rgb(150, 120, 240);
   color: #fff;
   text-decoration: none; 
@@ -644,13 +642,14 @@ footer .underline span:nth-child(1){
   section.hero{
     position: relative;
     min-height: 450px;
+    min-height: 65vh;
     overflow: hidden;
     background-color: #1e242a;
     z-index: -1;
   }
   #box1{
     width: 530px;
-    height: 100%;
+    height: 77%;
     background-image: url(./images/gridhand.png); 
     position: absolute;
     bottom: -100%;
@@ -701,7 +700,7 @@ footer .underline span:nth-child(1){
 
   /* MOBILE CONTACT SECTION */
   section .reachout{
-    flex-basis: 99%; 
+    flex-basis: 100%; 
   }
   /* END OF MOBILE CONTACT SECTION */
 
