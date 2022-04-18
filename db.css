@@ -655,7 +655,7 @@ footer .underline span:nth-child(1){
   #box1{
     width: 530px;
     height: 77%;
-    background-image: url(./images/gridhand.png); 
+    background-image: url(./images/gridhand-min.png); 
     position: absolute;
     bottom: -100%;
     left: -20%;  
