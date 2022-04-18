@@ -284,17 +284,47 @@ section.hero{
 
 /* End of Solution Ruleset */
 
+/* CONTACT SECTION */
+section.contact{ 
+  min-height: 79vh;
+  padding: 2em;
+  background: rgb(248, 242, 246); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  flex-wrap: wrap;
+}
+section .reachout{
+  flex-basis: 45%;
+  /* border: 1px solid dodgerblue; */
+  height: 100%;
+}
+.reachout p{
+  text-align: left;
+}
+.reachout .mid{
+  margin: 3em 0 5em;
+}
+.reachout .mid span{
+  display: block;
+  margin: 1em 0;
+  font-weight: 300;
+  color: #444;
+}
+
 /* SUBSCRIPTION RULESET */
-section.subscription{
+.subscription{
   min-height: 80vh;
   display: grid;
   place-items: center;
-  background: rgb(248, 242, 246); 
 }
 .form-container{
   max-width: 400px;
   background: #fff;
   box-shadow: 20px 20px 40px rgb(255, 211, 240);
+  box-shadow: 20px 20px 40px rgb(162, 222, 245);
+  box-shadow: 10px 20px 30px 2px rgb(206, 193, 243);
   border-radius: 1em;
   padding: 2em;
   position: relative; 
@@ -331,14 +361,16 @@ label{
   border: 1px solid gray;
   margin-bottom: 1em;
 }
-.form-container a{
+.form-container .cta.seq{
   display: block;
   background: rgb(182, 21, 128);
+  background: rgb(150, 120, 240);
   color: #fff;
-  text-decoration: none;
-  padding: .8em;
+  text-decoration: none; 
   text-align: center;
   cursor: pointer;
+  font-size: 1.45rem;
+  padding: 0;
 }
 .form-container input,
 .form-container a{
@@ -666,6 +698,12 @@ footer .underline span:nth-child(1){
   #solution .section-title{
     margin: 0;
   }
+
+  /* MOBILE CONTACT SECTION */
+  section .reachout{
+    flex-basis: 99%; 
+  }
+  /* END OF MOBILE CONTACT SECTION */
 
   /* FOOTER MOBILE */
   footer .row{ 

@@ -123,24 +123,48 @@
         </div>
       </div>
     </section>
-
-    <section class="subscription">
-      <div class="success">
-        <lottie-player class="lottie" src="https://assets8.lottiefiles.com/packages/lf20_NU3Nmy.json" background="transparent"  speed="1" style="width: 600px; height: 600px;"></lottie-player>
-      </div>
-      <div class="form-container">
-        <div class="onstart">
-          <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_5zh17nif.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+    <section class="contact">
+      <div class="reachout">
+        <div class="top">
+          <h2>Let's Collaborate</h2>
+          <p>
+            Reachout to us let's bring your idea to life, boost your business and brand. On phone and whatsapp we respond almost immediately.
+            On our other social media channels, within 12hrs we giving you positive feedback.
+          </p>
         </div>
-        <h1 class="seq">Wish to Subscribe?</h1>
-        <label for="email" class="seq">Email Address</label>
-        <input type="text" name="" id="email" class="seq">
-        <p class="seq">Don't worry we won't hound you like our competitors</p>
-        <a href="#0" class="cta seq">Join List </a>
-  
+        <div class="mid">
+          <span> <i class="fa fa-phone-alt"></i> +234-7039552911</span>
+          <span> <i class="fa fa-mail-bulk"></i> info@digitbase.ng</span>
+          <span> <i class="fa fa-map-marker-alt"></i> Imperial Plaza, 131 Olu-Obasanjo, PH.</span>
+        </div>
+        <div class="base sci">
+          <a href="#0"><i class="fab fa-facebook"></i></a>
+          <a href="#0"><i class="fab fa-twitter"></i></a>
+          <a href="#0"><i class="fab fa-instagram"></i></a>
+          <a href="#0"><i class="fab fa-whatsapp"></i></a>
+        </div>
       </div>
-      <h2>Success!</h2>
-    </section> 
+      <aside class="subscription">
+        <div class="success">
+          <lottie-player class="lottie" src="https://assets8.lottiefiles.com/packages/lf20_NU3Nmy.json" background="transparent"  speed="1" style="width: 600px; height: 600px;"></lottie-player>
+        </div>
+        <div class="form-container">
+          <div class="onstart">
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_5zh17nif.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+          </div>
+          <h1 class="seq">Wish to Subscribe?</h1>
+          <form action="" id="subsc">
+            <label for="email" class="seq">Email Address</label>
+            <input type="text" name="" id="email" class="seq">
+            <p class="seq">Don't worry we won't hound you like our competitors</p> 
+            <input type="button" onclick="submitFxn()" value="Join List" class="cta seq"> 
+          </form>
+    
+        </div>
+        <h2>Success!</h2>
+      </aside> 
+    </section>
+
 
   <footer>
     <div class="row">
@@ -215,6 +239,10 @@
       player.play()
     }, 800)
   })
+
+//   function submitFxn() {
+//   document.getElementById("subsc").reset();
+// }
 </script>
 </body>
 </html>
