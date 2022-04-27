@@ -31,6 +31,10 @@ img{
 }
 /* End of Generic Presets */
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: rgb(248, 242, 246); 
 }
@@ -149,25 +153,27 @@ section.hero{
   margin: 1.2em 0 2em;
   font-size: 1.45rem; 
 }
-#hero-text .cta{
+#hero-text a.cta{
   position: relative;
   display: inline-block;
-  padding: 10px 30px;
-  border: 2px solid #de49a9;
+  padding: 10px 30px; 
+  border: 2px solid #a744dc;
   color: #eeeeff;
   letter-spacing: 1px;
   font-weight: 500;
   font-size: 1.2rem;
   text-transform: uppercase;
-  transition: .5s;
-  outline: 2px inset #de49a9; 
+  transition: .5s; 
+  outline: 2px inset #a744dc; 
   outline-offset: .12em;
   margin: 5px;  
+  z-index: 99;
+  cursor: pointer;
 }
 #hero-text .cta:hover{
   color: #1e242a; 
 }
-#hero-text .cta::before{
+#hero-text a.cta::before{
   content: '';
   position: absolute;
   top: 0;
@@ -177,12 +183,12 @@ section.hero{
   background: #de49a9;
   transition: .9s;
 }
-#hero-text .cta:hover::before{
+#hero-text a.cta:hover::before{
   width: 100%;
 }
-#hero-text .cta span{
+#hero-text a.cta span{
   position: relative;
-  z-index: 3;
+  /* z-index: 3; */
 }
 
 /* SERVICES Ruleset */
@@ -650,7 +656,7 @@ footer .underline span:nth-child(1){
     min-height: 65vh;
     overflow: hidden;
     background-color: #1e242a;
-    z-index: -1;
+    /* z-index: -1; */
   }
   #box1{
     width: 530px;
@@ -688,10 +694,10 @@ footer .underline span:nth-child(1){
     font-size: .99rem;
     font-weight: 300;
   }
-  #hero-text .cta{ 
+  #hero-text a.cta{ 
     padding: 5px 15px;  
     font-weight: 400;
-    font-size: .75rem; 
+    font-size: .75rem;  
   }
 
 
