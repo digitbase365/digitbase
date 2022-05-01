@@ -21,38 +21,7 @@
 </head>
 <body>
   <!-- Top Nav -->
-  <!-- Chat Plugin -->
-  <!-- Messenger Chat Plugin Code -->
-  <div id="fb-root"></div>
-
-  <!-- Your Chat Plugin code -->
-  <div id="fb-customer-chat" class="fb-customerchat">
-  </div>
-
-  <script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "111866318845150");
-    chatbox.setAttribute("attribution", "biz_inbox");
-  </script>
-
-  <!-- Your SDK code -->
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        xfbml            : true,
-        version          : 'v13.0'
-      });
-    };
-
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-  <!-- End of Chat Plugin -->
+   
   
   <!-- End of Top Nav -->
   <main>
@@ -180,12 +149,12 @@
           <span> <i class="fa fa-mail-bulk"></i>info@digitbase.ng</span>
           <span> <i class="fa fa-map-marker-alt"></i>  Imperial Plaza, 131 Olu-Obasanjo, PH.</span>
         </div>
-        <div class="base sci">
+        <!-- <div class="base sci">
           <a href="#0"><i class="fab fa-facebook"></i></a>
           <a href="#0"><i class="fab fa-twitter"></i></a>
           <a href="#0"><i class="fab fa-instagram"></i></a>
           <a href="#0"><i class="fab fa-whatsapp"></i></a>
-        </div>
+        </div> -->
       </div>
       <aside class="subscription">
         <div class="success">
@@ -255,6 +224,12 @@
     <hr>
     <p class="copyright">&copy; 2020 - 2022 | Digitbase Creations | All Rights Reserved </p>
   </footer>
+
+  <!--Whatsapp Chat--> 
+  <div class="scroll-top chat" id="chat">
+    <a href="https://wa.me/%2B2348060434352?text=Hi%20Real%20Estate%20Diva" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  </div>
+  <!--Whatsapp Chat end-->
 
   </main>
 <script src="./db.js"></script>
