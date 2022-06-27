@@ -294,6 +294,15 @@ section.hero{
 
 /* End of Solution Ruleset */
 
+/* TESTIMONIAL RULESET */
+.testimonial{
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+  padding: 100px 0;
+}
+/* END OF TESTIMONIAL RULESET */
+
 /* CONTACT SECTION */
 section.contact{ 
   min-height: 79vh;
@@ -534,6 +543,69 @@ footer .underline span:nth-child(1){
 }
 /* End of Footer Ruleset */
 
+/* WHATSAPP CHAT ICON */
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  z-index: 600;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 1.1s ease-in-out;
+  -webkit-transform: translate3d(0, 200%, 0);
+  -ms-transform: translate3d(0, 200%, 0); 
+  transform: translate3d(0, 200%, 0);
+}
+.scroll-top a, .scroll-top a:visited {
+  display: block; 
+  height: 45px; 
+  width: 45px; 
+  line-height: 51px; 
+  text-align: center; 
+  border-radius: 7px; 
+  -webkit-box-shadow: 0 0 15px 6px rgba(0,0,0,0.1); 
+  -moz-box-shadow: 0 0 15px 6px rgba(0,0,0,0.1); 
+  box-shadow: 0 0 15px 6px rgba(0,0,0,0.1); 
+  -webkit-transition: all 0.3s ease-in-out; 
+  transition: all 0.3s ease-in-out; 
+  font-size:32px; 
+  color: #ffffff;
+}
+.scroll-top a:hover, .scroll-top a:focus {
+  color: #035e4a; 
+  background: #ffffff;
+}
+.scroll-top.scroll-visible {
+  opacity: 1; 
+  visibility: visible; 
+  -webkit-transform: translate3d(0, 0, 0); 
+  -ms-transform: translate3d(0, 0, 0); 
+  transform: translate3d(0, 0, 0);
+}
+
+.scroll-top  img{
+  width: 65%;
+}
+
+.scroll-top.chat{
+  bottom: 30px; 
+}
+.scroll-top.chat a{
+  background-color: limegreen;
+  border-radius: 50%;
+}
+.scroll-top.chat a:hover{
+  background-color: #fff;
+  color: limegreen;
+}
+
+footer#footer .fa-whatsapp{
+  color: #21af2d;
+  margin-top: -5px;
+}
+/* END OF WHATSAPP CHAT ICON */
+
 
 /***************** ANIMATION Series *********************/
 @keyframes anim {
@@ -582,7 +654,7 @@ footer .underline span:nth-child(1){
 /* FLUIDITY */
 
 /* RESPONSIVE FLUIDITY */
-@media screen and (max-width: 500px){
+@media screen and (max-width: 495px){
   /* Generic */ 
   .section-title{ 
     font-size: 1.5rem; 
@@ -642,7 +714,7 @@ footer .underline span:nth-child(1){
     transform: translateY(9px);
   }
 
-  .menu.menu.swish .burger{
+  .menu.swish .burger{
     transform: translateX(-50px);
     background: transparent;
   }
@@ -706,9 +778,7 @@ footer .underline span:nth-child(1){
 
 
   /* MOBILE SERVICE & SOLUTIONS */
-  #solution{
-    background: url(./images/backdrop/mbkd.jpg) top center / contain;  
-    background: url(./images/backdrop/mbkdd.jpg) top center / contain;  
+  #solution{ 
     background: url(./images/backdrop/mbkdd.jpg);  
     min-height: 50vh; 
   }
@@ -761,73 +831,15 @@ footer .underline span:nth-child(1){
   }
   footer .copyright{
     margin-bottom: 5px;
+  } 
+  .scroll-top.chat{
+    bottom: 50px; 
+    right: 10px;
   }
 }
 /* END OF RESPONSIVE FLUIDITY */
 
 
-/* WHATSAPP CHAT ICON */
-.scroll-top {
-  position: fixed;
-  bottom: 30px;
-  right: 15px;
-  z-index: 600;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 1.1s ease-in-out;
-  -webkit-transform: translate3d(0, 200%, 0);
-  -ms-transform: translate3d(0, 200%, 0); 
-  transform: translate3d(0, 200%, 0);
-}
-.scroll-top a, .scroll-top a:visited {
-  display: block; 
-  height: 45px; 
-  width: 45px; 
-  line-height: 51px; 
-  text-align: center; 
-  border-radius: 7px; 
-  -webkit-box-shadow: 0 0 15px 6px rgba(0,0,0,0.1); 
-  -moz-box-shadow: 0 0 15px 6px rgba(0,0,0,0.1); 
-  box-shadow: 0 0 15px 6px rgba(0,0,0,0.1); 
-  -webkit-transition: all 0.3s ease-in-out; 
-  transition: all 0.3s ease-in-out; 
-  font-size:32px; 
-  color: #ffffff;
-}
-.scroll-top a:hover, .scroll-top a:focus {
-  color: #035e4a; 
-  background: #ffffff;
-}
-.scroll-top.scroll-visible {
-  opacity: 1; 
-  visibility: visible; 
-  -webkit-transform: translate3d(0, 0, 0); 
-  -ms-transform: translate3d(0, 0, 0); 
-  transform: translate3d(0, 0, 0);
-}
-
-.scroll-top  img{
-  width: 65%;
-}
-
-.scroll-top.chat{
-  bottom: 75px; 
-}
-.scroll-top.chat a{
-  background-color: limegreen;
-  border-radius: 50%;
-}
-.scroll-top.chat a:hover{
-  background-color: #fff;
-  color: limegreen;
-}
-
-footer#footer .fa-whatsapp{
-  color: #21af2d;
-  margin-top: -5px;
-}
-/* END OF WHATSAPP CHAT ICON */
 
 
 
