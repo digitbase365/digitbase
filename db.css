@@ -839,6 +839,30 @@ footer#footer .fa-whatsapp{
 }
 /* END OF RESPONSIVE FLUIDITY */
 
+/* ERROR 404 PAGE */
+section.e404{
+  height: 100vh;
+  background: url(images/404x.png);
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+.e404 .cta{
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 25px;
+  border-radius: 20px;
+  background-color: #a3f2a9;
+  transition: .5s;
+}
+.e404 .cta:hover{
+  background-color: #21af2d;
+  color: #fff;
+}
+/* END OF ERROR 404 PAGE */
+
 
 
 
