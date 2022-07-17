@@ -840,12 +840,18 @@ footer#footer .fa-whatsapp{
 /* END OF RESPONSIVE FLUIDITY */
 
 /* ERROR 404 PAGE */
+.body{
+  height: 100vh; 
+  display: grid; 
+  place-items: center;
+  background-color: #fff;
+}
   .erp{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     background-color: #fff;
     padding: 3em 0;
   }
