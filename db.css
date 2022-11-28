@@ -89,6 +89,7 @@ nav .marker{
   width: 0;
   left: 0;
   background: var(--acn-color);
+  background: #a744dc;
   bottom: -7px;
   border-radius: 4px; 
   transition: .5s;
@@ -96,8 +97,15 @@ nav .marker{
 .container .menu.hide-desktop{
   display: none;
 }
+header a.cap{ 
+  background-color: #a744dc;
+  padding: 5px 25px;
+  outline: 1px solid #a744dc;
+  outline-offset: 2px;
+}
 
 
+/* HERO SECTION RULESET */
 section.hero{
   position: relative;
   min-height: calc(100vh - 7vh);
@@ -348,9 +356,11 @@ section .reachout{
   max-width: 400px;
   background: #fff; 
   box-shadow: 5px 10px 20px 2px rgb(206, 193, 243);
-  border-radius: 1em;
+  border-radius: 7px;
   padding: 2em;
   position: relative; 
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
 }
 .form-container h1{
   margin: 3em 0 .5em;
@@ -402,6 +412,7 @@ label{
   margin: 1em 0 2em;
   padding: 1em;
   background: rgb(245, 243, 235);
+  background: #F8F1FF;
 }
 .onstart{
   position: absolute;
@@ -507,6 +518,7 @@ footer .underline{
   position: absolute;
   height: 4px;
   background: #767676;
+  background: #cba1f8;
   border-radius: 3px;
   /* top: 25px; */
   left: 0;
