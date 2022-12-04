@@ -42,6 +42,7 @@ main{
   width: 100%;
   min-height: 100vh; 
   overflow: hidden;
+  /* background-color: #fbfbfb; */
 } 
 header{ 
   overflow: hidden;
@@ -300,6 +301,43 @@ section.hero{
   background: #333;
   color: #eeefff;
 }
+
+/****** Scroll Observatory Anime********/
+.hidden{
+  opacity: 0;
+  filter: blur(3px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+.card.hidden:nth-of-type(2){
+  transition-delay: 300ms;
+}
+.card.hidden:nth-of-type(3){
+  transition-delay: 600ms;
+}
+.card.hidden:nth-of-type(4){
+  transition-delay: 900ms;
+}
+.card.hidden:nth-of-type(5){
+  transition-delay: 1200ms;
+}
+.card.hidden:nth-of-type(6){
+  transition-delay: 1500ms;
+}
+.card.hidden:nth-of-type(7){
+  transition-delay: 1800ms;
+}
+@media(prefers-reduced-motion){
+  .hidden{
+    transition: none;
+  }
+}
+/****** End of Scroll Observatory Anime********/
 
 /* End of Solution Ruleset */
 
@@ -815,6 +853,9 @@ footer .fa-whatsapp{
   }
   #solution .section-title{
     margin: 0;
+  }
+  #solution .card-holder{   
+    gap: 0; 
   }
 
   /* MOBILE CONTACT SECTION */
